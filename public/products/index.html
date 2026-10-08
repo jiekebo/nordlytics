@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0a0e14" />
+    <title>Products — Nordlytics AB</title>
+    <meta name="description" content="Products and case studies from Nordlytics AB: Shot Log, automatic computer-vision target scoring for shooting sports, plus applied AI case studies in IoT and enterprise machine learning." />
+    <link rel="canonical" href="https://nordlytics.se/products/" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <meta property="og:title" content="Products — Nordlytics AB" />
+    <meta property="og:description" content="Shot Log — automatic target scoring with computer vision. Products and case studies from Nordlytics AB." />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a href="/" class="site-header__brand">
+          <span class="site-header__mark">N</span>
+          <span class="site-header__name">Nordlytics</span>
+        </a>
+        <div class="site-header__right">
+          <nav class="site-header__nav" aria-label="Primary">
+            <a href="/services/">Services</a>
+            <a href="/products/" aria-current="page">Products</a>
+            <a href="/company/">Company</a>
+            <a href="/contact/">Contact</a>
+          </nav>
+          <a href="/contact/" class="btn btn--primary btn--sm site-header__cta">Get in touch</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <p class="page-hero__eyebrow">Products &amp; case studies</p>
+        <h1 class="page-hero__title">Systems we've shipped.</h1>
+        <p class="page-hero__lead">
+          Products we own end to end, and engagements we can talk about —
+          all running on real data, in real production.
+        </p>
+      </section>
+
+      <section class="section section--tight">
+        <div class="container">
+          <div class="product-panel">
+            <div>
+              <h2 class="product-panel__title">Shot Log</h2>
+              <p class="product-panel__desc">
+                <strong style="color: var(--text)">Automatic target scoring for shooting
+                sports.</strong> Clip a camera to the target rig, take a photo of the
+                paper, and computer vision does the rest: the image is
+                rectified to a flat, metric view, every bullet impact is
+                detected with instance segmentation, and each shot is projected
+                onto the scoring rings for an automatic value — no manual
+                entry.
+              </p>
+              <p class="product-panel__desc">
+                Around the model sits a full product: clubs, members, events,
+                series and long-term statistics, with a workflow that supports
+                club administration and witness-approved series.
+              </p>
+              <div class="chip-row" style="margin-bottom: 1.4rem;">
+                <span class="chip">PyTorch</span>
+                <span class="chip">ONNX</span>
+                <span class="chip">React Native</span>
+                <span class="chip">FastAPI</span>
+                <span class="chip">PostgreSQL</span>
+                <span class="chip">Terraform</span>
+              </div>
+              <a class="btn btn--primary" href="https://shotlog.nordlytics.se" target="_blank" rel="noopener">Open the live web app &rarr;</a>
+            </div>
+            <div class="product-panel__side">
+              <h4>Availability</h4>
+              <ul>
+                <li>Web app — live at shotlog.nordlytics.se</li>
+                <li>iOS &amp; Android apps — in development</li>
+              </ul>
+              <h4 style="margin-top: 1.2rem;">Under the hood</h4>
+              <ul>
+                <li>Custom-curated instance-segmentation dataset</li>
+                <li>Model distillation &amp; INT8 quantisation</li>
+                <li>On-device &amp; in-browser inference (WASM)</li>
+                <li>OpenCV homography rectification</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--tight">
+        <div class="container">
+          <div class="section__head">
+            <p class="section__eyebrow">Case studies</p>
+            <h2 class="section__title">Selected engagements.</h2>
+          </div>
+          <div class="cards-grid">
+            <div class="card">
+              <h3 class="card__title">Full-stack AI webapp &amp; edge inference</h3>
+              <p class="card__desc">
+                End-to-end development of a computer-vision web application for
+                an enterprise client — including infrastructure (Terraform on
+                AWS), an MLflow-managed model lifecycle and inference on thin
+                edge devices.
+              </p>
+              <div class="chip-row">
+                <span class="chip">Computer Vision</span>
+                <span class="chip">AWS</span>
+                <span class="chip">MLflow</span>
+                <span class="chip">Edge Inference</span>
+              </div>
+            </div>
+            <div class="card">
+              <h3 class="card__title">Indoor Environment AI</h3>
+              <p class="card__desc">
+                A closed-loop IoT system: ESP32 and Pico W sensors feed a
+                time-series database, and an hourly machine-learning scheduler
+                — with explainable model output — autonomously controls a
+                dehumidifier to maintain healthy indoor humidity.
+              </p>
+              <div class="chip-row">
+                <span class="chip">IoT</span>
+                <span class="chip">InfluxDB</span>
+                <span class="chip">scikit-learn</span>
+                <span class="chip">SHAP</span>
+              </div>
+            </div>
+            <div class="card">
+              <h3 class="card__title">Automated forecasting platform</h3>
+              <p class="card__desc">
+                A fully automated time-series forecasting solution for critical
+                power-grid points in the energy sector — spanning data ingest,
+                feature generation and models from classical regression to
+                sequence-to-sequence quantile regression.
+              </p>
+              <div class="chip-row">
+                <span class="chip">Energy sector</span>
+                <span class="chip">Time series</span>
+                <span class="chip">Quantile regression</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--tight">
+        <div class="container">
+          <div class="cta-band">
+            <h2>Want results like these?</h2>
+            <p>We take on a small number of engagements at a time — tell us about yours.</p>
+            <a class="btn btn--primary" href="/contact/">Get in touch</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__grid">
+        <div>
+          <div class="site-footer__brand"><span class="site-header__mark">N</span> Nordlytics</div>
+          <p class="site-footer__tag">Applied AI, computer vision and cloud data platforms — engineered end to end.</p>
+        </div>
+        <div>
+          <p class="site-footer__heading">Company</p>
+          <ul class="site-footer__links">
+            <li><a href="/services/">Services</a></li>
+            <li><a href="/products/">Products</a></li>
+            <li><a href="/company/">About Nordlytics</a></li>
+            <li><a href="/contact/">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="site-footer__heading">Legal</p>
+          <ul class="site-footer__links">
+            <li><a href="/privacy/">Privacy policy</a></li>
+            <li><a href="/terms/">Terms of service</a></li>
+            <li><a href="/company/">Company information</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="site-footer__heading">Contact</p>
+          <ul class="site-footer__links">
+            <li><a href="mailto:nordlytics@nordlytics.se">nordlytics@nordlytics.se</a></li>
+            <li>Neptunigatan 71 Lgh 1508</li>
+            <li>211 09 Malmö, Sweden</li>
+          </ul>
+        </div>
+      </div>
+      <div class="site-footer__legal">
+        <span>&copy; 2026 Nordlytics AB · Org.nr 559323-4874 · Malmö, Sweden</span>
+        <span>Registered with Bolagsverket · Swedish Companies Registration Office</span>
+      </div>
+    </footer>
+  </body>
+</html>
